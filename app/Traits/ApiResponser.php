@@ -12,6 +12,6 @@ trait ApiResponser
     }
     public function errorResponse($message, $code) //Build error responses
     {
-        return response()->json(['error' => $message, 'code' => $code], $code);
+        return response()->json(['error' => $message, 'site' => 1, 'code' => $code], $code);
     }
 }
